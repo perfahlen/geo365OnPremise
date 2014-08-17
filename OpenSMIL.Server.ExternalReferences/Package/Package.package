@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f8639f7e-7fb9-4ea6-884f-5c0e516b85b1" solutionId="f8639f7e-7fb9-4ea6-884f-5c0e516b85b1" resetWebServer="false" sharePointProductVersion="15.0" name="OpenSMIL.Server.ExternalReferences" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="SharpKml.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="SharpKml.dll" />
+  </assemblies>
+</package>

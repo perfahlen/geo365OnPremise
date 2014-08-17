@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF326935-ED5F-4FDB-B3A4-A3E5022FC9BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenSMIL.Client</RootNamespace>
+    <AssemblyName>OpenSMIL.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OpenSMIL\OpenSMIL.ascx.cs">
+      <DependentUpon>OpenSMIL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenSMIL\OpenSMIL.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OpenSMIL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3789b57-9c96-4646-bdf1-0088865c6200}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{82fd76e5-4ec4-4b7c-a80d-51164b2ccf72}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.eot" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.ttf" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.woff" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\FontAwesome.otf" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\bordered-pulled.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\core.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\fixed-width.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\font-awesome.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\icons.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\larger.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\list.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\mixins.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\path.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\rotated-flipped.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\spinning.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\stacked.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\variables.less" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\font-awesome.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_bordered-pulled.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_core.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_fixed-width.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_icons.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_larger.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_list.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_mixins.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_path.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_rotated-flipped.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_spinning.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_stacked.scss" />
+    <None Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_variables.scss" />
+    <None Include="Layouts\OpenSMIL\js\libs\jquery-1.10.2.min.map" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{58faa95e-9e25-46f8-baf5-50bc6a08d9e6}</SharePointProjectItemId>
+    </None>
+    <None Include="OpenSMIL\OpenSMIL.webpart" />
+    <None Include="OpenSMIL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fecb6ff5-b7a0-45f3-a323-01dba08cd637}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{9332b257-dcee-4fca-bfc3-cdaffd3d5a7a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\css\font-awesome.css" />
+    <Content Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\css\font-awesome.min.css" />
+    <Content Include="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.svg" />
+    <Content Include="Layouts\OpenSMIL\images\fire.png" />
+    <Content Include="Layouts\OpenSMIL\js\libs\GPXParserModule-min.js" />
+    <Content Include="Layouts\OpenSMIL\js\libs\GPXParserModule.js" />
+    <Content Include="Layouts\OpenSMIL\js\libs\heatmap-min.js" />
+    <Content Include="Layouts\OpenSMIL\js\libs\jquery-1-10-2-min.js" />
+    <Content Include="Layouts\OpenSMIL\js\libs\WKTModule-min.js" />
+    <Content Include="Layouts\OpenSMIL\js\WebPartMap.js" />
+    <Content Include="OpenSMIL\Elements.xml" />
+    <Content Include="OpenSMIL\OpenSMIL.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>OpenSMIL.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

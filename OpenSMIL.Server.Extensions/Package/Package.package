@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="86a56c63-bfec-441f-87c2-7a1c290fc642" 
+        solutionId="86a56c63-bfec-441f-87c2-7a1c290fc642" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="OpenSMIL.Server.Extensions"
+        sharePointProductVersion="15.0">
+</package>

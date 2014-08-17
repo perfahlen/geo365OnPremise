@@ -1,0 +1,1 @@
+var OpenSMILeMobileApp =angular.module('OpenSMILeMobileApp', ['ngGrid']);

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D48E0D3D-A2FB-4170-BA27-F71EFBE0F8D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenSMIL.MobileClient</RootNamespace>
+    <AssemblyName>OpenSMIL.MobileClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\OpenSMIL.MobileClient\Client.aspx.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\OpenSMIL.MobileClient\Client.aspx.designer.cs">
+      <DependentUpon>Client.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\OpenSMIL.MobileClient\debug.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{b98ca70c-6c72-4ad0-9feb-1ef6876e1e36}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\.DS_Store" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.eot" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.ttf" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.woff" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\fonts\FontAwesome.otf" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\bordered-pulled.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\core.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\fixed-width.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\font-awesome.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\icons.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\larger.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\list.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\mixins.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\path.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\rotated-flipped.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\spinning.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\stacked.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\less\variables.less" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\font-awesome.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_bordered-pulled.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_core.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_fixed-width.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_icons.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_larger.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_list.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_mixins.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_path.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_rotated-flipped.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_spinning.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_stacked.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\scss\_variables.scss" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\.DS_Store" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\.DS_Store" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\.DS_Store" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\css\bootstrap-theme.css.map" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\css\bootstrap.css.map" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\jquery-1.10.2.min.map" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0debc07c-1efb-44a8-b1a2-b62e725fce72}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{1eda33cb-beeb-438c-a925-8d2948ecfa9c}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\css\OpenSMIL-Mobile.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\css\font-awesome.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\css\font-awesome.min.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.svg" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\app.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\AppFilters.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\Effects.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\ExtendedBingMapsApi.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\LayersController.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\OpenSMILMobile.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\OpenSMILServices.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\app\Settings.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\angular.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\css\bootstrap-theme.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\css\bootstrap-theme.min.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\css\bootstrap.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\css\bootstrap.min.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\js\bootstrap.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\bootstrap-3.1.1-dist\js\bootstrap.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\fastclick.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\GPXParserModule-min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\GPXParserModule.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\html5shiv.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\jquery-1-10-2-min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\jquery.simplemodal.1.4.4.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\ng-grid-2.0.11.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\ng-grid-layout.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\ng-grid.min.css" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\simpleModal.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\ui-bootstrap-tpls-0.11.0.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\ui-bootstrap.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\ui-bootstrap.min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\assets\js\libs\WKTModule-min.js" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\Client.aspx" />
+    <Content Include="Layouts\OpenSMIL.MobileClient\debug.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

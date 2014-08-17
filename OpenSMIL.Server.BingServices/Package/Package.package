@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="50177724-bc5b-47ef-b86a-4feb958115be" 
+        solutionId="50177724-bc5b-47ef-b86a-4feb958115be" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="OpenSMIL.Server.BingServices"
+        sharePointProductVersion="15.0">
+</package>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="06306a2e-09a1-42c4-8fac-076fca250cd0" 
+        solutionId="06306a2e-09a1-42c4-8fac-076fca250cd0" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="OpenSMIL.Server.SMILLayers"
+        sharePointProductVersion="15.0">
+</package>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2b6c8242-c6ff-4262-ae97-b316fa1d016d" solutionId="2b6c8242-c6ff-4262-ae97-b316fa1d016d" resetWebServer="false" sharePointProductVersion="15.0" name="OpenSMIL.Fields.Geometry" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="ec65eb22-7849-4be7-8964-5b782a6400e0" />
+    <projectItemReference itemId="c86ba7fe-407a-4046-9be4-43b638b58dae" />
+  </projectItems>
+</package>

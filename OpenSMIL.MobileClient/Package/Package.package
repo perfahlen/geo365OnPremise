@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1eda33cb-beeb-438c-a925-8d2948ecfa9c" solutionId="1eda33cb-beeb-438c-a925-8d2948ecfa9c" resetWebServer="false" sharePointProductVersion="15.0" name="OpenSMIL.MobileClient" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b98ca70c-6c72-4ad0-9feb-1ef6876e1e36" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="0debc07c-1efb-44a8-b1a2-b62e725fce72" />
+  </projectItems>
+</package>

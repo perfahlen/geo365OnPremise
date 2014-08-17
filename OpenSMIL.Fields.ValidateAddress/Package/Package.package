@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5237868f-0b59-4dff-b5b1-4cac04fa1fb4" solutionId="5237868f-0b59-4dff-b5b1-4cac04fa1fb4" resetWebServer="false" sharePointProductVersion="15.0" name="OpenSMIL.ValidateAddress" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="0aadd6ef-7c3b-46af-a426-09316fc40d2b" />
+    <projectItemReference itemId="eae3d0b2-547b-4aef-a3ca-da2b6ed61d55" />
+  </projectItems>
+</package>

@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost Language="C#" Debug="true"
+    Service="OpenSMIL.Server.ISAPI.OpenSMIL.GeoLists $SharePoint.Project.AssemblyFullName$"  
+    CodeBehind="GeoLists.svc.cs"
+    Factory="Microsoft.SharePoint.Client.Services.MultipleBaseAddressBasicHttpBindingServiceHostFactory, 
+    Microsoft.SharePoint.Client.ServerRuntime, 
+    Version=15.0.0.0, Culture=neutral, PublicKeyToken=deb5cb40dd7862f6" %>

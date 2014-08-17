@@ -1,0 +1,93 @@
+.info-window{
+	opacity: 0.95;
+	position: fixed;
+	bottom: -30;
+	width: 50%; 
+	height: 50%; 
+	z-index: 1;
+}
+
+ul{
+	list-style-type: none;
+}
+
+@media (max-width: 768px) {
+	.visible-map{
+		position: relative;
+		height: 50%;
+	}
+
+	.info-window{
+		left: 4%;
+		min-width: 92%;
+		width: 50%;
+		height: 50%;
+		z-index: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.visible-map{
+		position: fixed;
+		top: 0;
+		bottom:	0;
+	}
+
+	.info-window{
+		left: 25%;
+	}
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    position: relative;
+    width: 90%;
+    height: 70%;
+    left: 5%;
+    top: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.closeMenu{
+	float: right; 
+	cursor: pointer;
+	position: relative;
+	bottom: 4px;
+}
+
+.faMenu{
+	position: relative: 
+	bottom: 3px;
+}
+
+.rightSync{
+	position: relative;
+	right: 5%;
+	top: 10px;
+    float: right;
+}
+
+.marginLeft8px{
+	margin-left: 8px;
+}
+
+.syncToServer{
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.iconColor{
+	color: #333;
+}
+
+.iconRed{
+    color: #ff0000;
+}
+
+.addItem{
+	position: relative;
+	left: 6px;
+	top: 6px;
+	cursor: pointer;
+}

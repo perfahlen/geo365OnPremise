@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ABBD613-353D-470A-A665-77B397967DAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenSMIL.Server</RootNamespace>
+    <AssemblyName>OpenSMIL.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <TokenReplacementFileExtensions>svc</TokenReplacementFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ISAPI\OpenSMIL\GeoLists.svc.cs">
+      <DependentUpon>GeoLists.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ISAPI\OpenSMIL\IGeoLists.cs" />
+    <Compile Include="Layouts\OpenSMIL\services\BingKey.ashx.cs">
+      <DependentUpon>BingKey.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\OpenSMIL\services\CSV.ashx.cs">
+      <DependentUpon>CSV.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\OpenSMIL\services\KML.ashx.cs">
+      <DependentUpon>KML.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\OpenSMIL\services\FileUpload.ashx.cs">
+      <DependentUpon>FileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\OpenSMIL\services\OpenSMILLayers.ashx.cs">
+      <DependentUpon>OpenSMILLayers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\OpenSMIL\services\ValidateAddress.ashx.cs">
+      <DependentUpon>ValidateAddress.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenSMILServiceBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{6f127ac6-a45d-4f07-ad73-f31b26498e9d}</FeatureId>
+    </None>
+    <None Include="ISAPI\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69126f8c-96f3-431c-b31f-c461a9907800}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\OpenSMIL\services\BingKey.ashx" />
+    <None Include="Layouts\OpenSMIL\services\CSV.ashx" />
+    <None Include="Layouts\OpenSMIL\services\KML.ashx" />
+    <None Include="Layouts\OpenSMIL\services\FileUpload.ashx" />
+    <None Include="Layouts\OpenSMIL\services\OpenSMILLayers.ashx" />
+    <None Include="Layouts\OpenSMIL\services\ValidateAddress.ashx" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a8530e9e-27bb-48ec-84f1-b2ad902c5d2c}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{93468dc3-8ac1-45a7-8aec-aa7f8b15c5f0}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenSMIL.Server.BingServices\OpenSMIL.Server.BingServices.csproj">
+      <Project>{2f901531-7ef7-42a2-84a3-46f3b57f85da}</Project>
+      <Name>OpenSMIL.Server.BingServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenSMIL.Server.IO\OpenSMIL.Server.IO.csproj">
+      <Project>{2a78b455-5abd-4932-ae6d-254832d92b83}</Project>
+      <Name>OpenSMIL.Server.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenSMIL.Server.SMILLayers\OpenSMIL.Server.SMILLayers.csproj">
+      <Project>{c9b42634-d2fa-44e6-a482-a386a8d93d9c}</Project>
+      <Name>OpenSMIL.Server.SMILLayers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenSMIL.Server.SPBase\OpenSMIL.Server.SPBase.csproj">
+      <Project>{45aeb3d0-bf9d-4143-bdf2-45a1a74e40b9}</Project>
+      <Name>OpenSMIL.Server.SPBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="ISAPI\OpenSMIL\GeoLists.svc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

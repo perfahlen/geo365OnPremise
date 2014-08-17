@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="Ribbon.Library.Actions.AddAButton" 
+                Location="CommandUI.Ribbon" 
+                RegistrationId="0x01" 
+                RegistrationType="ContentType" 
+                Title="Display the UniqueId for the list item.">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.List.Actions.Controls._children">
+          <Button Id="Ribbon.Library.Share.NewRibbonButton" 
+                  Command="NewRibbonButtonCommand"
+                  Image16by16="/_layouts/15/OpenSMIL/images/maps.png"  
+                  Image32by32="/_layouts/15/OpenSMIL/images/maps.png"
+                  LabelText="Export to KML"
+                  ToolTipTitle="Export to KML"
+                  ToolTipDescription="Displays UniqueId for the list item." 
+                  TemplateAlias="o1" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="NewRibbonButtonCommand" EnabledScript="true" CommandAction="javascript:
+                          window.location.href = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/OpenSMIL/services/KML.ashx?listId=' + SP.ListOperation.Selection.getSelectedList();
+                          " />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>
