@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="b2ee8f98-cd72-4c5b-b5b5-5eccf373f656" Scope="Site" Title="OpenSMIL.Client Feature1">
+  <ElementManifests>
+    <ElementManifest Location="OpenSMIL\Elements.xml" />
+    <ElementFile Location="OpenSMIL\OpenSMIL.webpart" />
+  </ElementManifests>
+</Feature>

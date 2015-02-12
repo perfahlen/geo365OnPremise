@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="94653f00-68b3-4adf-9847-34d99624e274" solutionId="94653f00-68b3-4adf-9847-34d99624e274" resetWebServer="false" sharePointProductVersion="15.0" name="OpenSMIL.Server.IO" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <assemblies>
-    <customAssembly location="GeoAPI.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\OpenSMIL.Server.ExternalReferences\GeoAPI.dll" />
-    <customAssembly location="NetTopologySuite.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\OpenSMIL.Server.ExternalReferences\NetTopologySuite.dll" />
     <customAssembly location="SharpKml.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\OpenSMIL.Server.ExternalReferences\SharpKml.dll" />
   </assemblies>
 </package>

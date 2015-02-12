@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="9332b257-dcee-4fca-bfc3-cdaffd3d5a7a" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="OpenSMIL.Client.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="OpenSMIL.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12caf34a34fc102b" Namespace="OpenSMIL.Client.OpenSMIL" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.eot" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.ttf" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.woff" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\FontAwesome.otf" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\bordered-pulled.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\core.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\fixed-width.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\font-awesome.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\icons.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\larger.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\list.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\mixins.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\path.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\rotated-flipped.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\spinning.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\stacked.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\less\variables.less" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\font-awesome.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_bordered-pulled.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_core.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_fixed-width.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_icons.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_larger.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_list.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_mixins.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_path.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_rotated-flipped.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_spinning.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_stacked.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\scss\_variables.scss" />
+    <TemplateFile Location="Layouts\OpenSMIL\js\libs\jquery-1.10.2.min.map" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\css\font-awesome.css" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\css\font-awesome.min.css" />
+    <TemplateFile Location="Layouts\OpenSMIL\fonts\font-awesome-4.0.3\fonts\fontawesome-webfont.svg" />
+    <TemplateFile Location="Layouts\OpenSMIL\images\fire.png" />
+    <TemplateFile Location="Layouts\OpenSMIL\js\libs\GPXParserModule-min.js" />
+    <TemplateFile Location="Layouts\OpenSMIL\js\libs\GPXParserModule.js" />
+    <TemplateFile Location="Layouts\OpenSMIL\js\libs\heatmap-min.js" />
+    <TemplateFile Location="Layouts\OpenSMIL\js\libs\jquery-1-10-2-min.js" />
+    <TemplateFile Location="Layouts\OpenSMIL\js\libs\WKTModule-min.js" />
+    <TemplateFile Location="Layouts\OpenSMIL\js\WebPartMap.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="OpenSMIL.Client_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

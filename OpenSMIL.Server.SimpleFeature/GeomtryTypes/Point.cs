@@ -35,31 +35,5 @@ namespace OpenSMIL.Server.SimpleFeature.GeomtryTypes
 
         public double Lat { get; set; }
 
-        //public static bool operator ==(Point p1, Point p2)
-        //{
-        //    if (p1 == null)
-        //        return false;
-        //    if (p2 == null)
-        //        return false;
-
-        //    return (p1.Lon == p2.Lon && p1.Lat == p2.Lat);
-        //}
-
-        //public static bool operator !=(Point p1, Point p2)
-        //{
-        //    if (p1 == null)
-        //        return false;
-        //    if (p2 == null)
-        //        return false;
-
-        //    if (p1.Lon != p2.Lon)
-        //        return true;
-
-        //    if (p1.Lat != p2.Lat)
-        //        return true;
-
-        //    return false;
-        //}
-
     }
 }
