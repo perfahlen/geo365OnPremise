@@ -19,8 +19,10 @@ SMIL is an open source project with the aim to geo-enable SharePoint.
 ![alt text](http://www.swecosundsvall.se/~perf/opensmilImages/mobile2.png "createItem")
 ![alt text](http://www.swecosundsvall.se/~perf/opensmilImages/mobile3.png "createItem")
 
+Deploy the wsp's and add BingKey to your web.config like
 
-
-
-
-
+```
+<appSettings>
+   <add key="BingKey" value="{your-bing-map-key}" />
+</appSettings>
+```
