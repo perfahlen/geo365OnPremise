@@ -1,4 +1,4 @@
-Geo365 - opensmil
+Geo365OnPremise - opensmil
 ========
 
 
